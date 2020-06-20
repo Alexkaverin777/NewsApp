@@ -26,7 +26,7 @@ function App() {
 	const [objNews, setObjNews] = React.useState('');
 
 	const findsTheDesiredObject = (url) => {
-		const elm = data.find( (item) => item.url === url);
+		const elm = data.find((item) => item.url === url);
 		setObjNews(elm);
 	};
 	return (
@@ -67,9 +67,9 @@ function App() {
 				path='/contact'
 				component={Contact}
 			/>
-			<Route	path='/news/:news'
-				render={() => (<News data={objNews}	/>
-				)}
+			<Route path='/news/:news'
+				   render={() => (<News data={objNews}/>
+				   )}
 			/>
 			<Footer/>
 		</div>
